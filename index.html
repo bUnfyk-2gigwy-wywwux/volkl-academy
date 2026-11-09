@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 뵐클 스키 아카데미 수강생 안내</title>
+<meta name="description" content="2026 뵐클 스키 아카데미 강의자료 다운로드, 실기 일정, 행사·영상 크루·설문 안내">
+<meta property="og:title" content="2026 뵐클 스키 아카데미 수강생 안내">
+<meta property="og:description" content="강의자료 다운로드 · 실기 일정 · 영상 크루 모집 · 설문">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+  :root{
+    --y:#f5e300; --k:#141414; --k2:#222; --bg:#f7f7f6; --card:#fff;
+    --t:#1a1a1a; --t2:#5c5c5c; --t3:#8a8a8a; --line:#e4e4e2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;word-break:keep-all;overflow-wrap:break-word}
+  html{scroll-behavior:smooth}
+  body{font-family:'Noto Sans KR',-apple-system,'Apple SD Gothic Neo',sans-serif;background:var(--bg);color:var(--t);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:760px;margin:0 auto;padding:0 16px}
+
+  /* 상단 */
+  header{background:var(--k);color:#fff;border-left:8px solid var(--y)}
+  header .wrap{padding:44px 20px 36px}
+  .kicker{display:inline-block;background:var(--y);color:var(--k);font-weight:700;font-size:13px;letter-spacing:1px;padding:4px 12px}
+  h1{font-size:clamp(28px,7vw,40px);font-weight:700;line-height:1.25;margin:16px 0 10px}
+  .lead{color:var(--y);font-size:16px}
+  .updated{color:#9a9a9a;font-size:13px;margin-top:14px}
+
+  /* 바로가기 */
+  nav{position:sticky;top:0;z-index:5;background:rgba(247,247,246,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+  nav .wrap::-webkit-scrollbar{display:none}
+  nav a{flex:none;text-decoration:none;font-size:14px;font-weight:500;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:#fff}
+  nav a:active{background:var(--y)}
+
+  section{padding:36px 0 8px}
+  .sec-tag{display:inline-block;background:var(--k);color:var(--y);font-size:12px;font-weight:700;padding:3px 10px}
+  h2{font-size:24px;font-weight:700;margin:10px 0 6px}
+  .sub{color:var(--t2);font-size:15px;margin-bottom:18px}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .card + .card{margin-top:10px}
+
+  /* 소통방 */
+  .band{background:var(--k);color:#fff;border-radius:12px;padding:22px;border-top:5px solid var(--y)}
+  .band h3{font-size:20px;margin-bottom:6px}
+  .band p{color:#cfcfcf;font-size:15px}
+  .steps{list-style:none;margin:16px 0 4px;counter-reset:s}
+  .steps li{counter-increment:s;position:relative;padding:0 0 14px 40px;color:#eee;font-size:15px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--y);color:var(--k);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+  .steps b{color:var(--y)}
+  .note{font-size:14px;color:#bdbdbd;border-top:1px solid #333;padding-top:12px;margin-top:4px}
+
+  /* 버튼 */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 18px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;background:var(--y);color:var(--k);border:0;margin-top:12px}
+  .btn.dark{background:var(--k);color:var(--y)}
+  .btn.ghost{background:transparent;color:var(--t);border:1px solid var(--line)}
+  .btn.off{background:#e9e9e7;color:#9a9a9a;pointer-events:none}
+  .btn.full{width:100%}
+
+  /* 일정 */
+  .sched{display:grid;gap:10px}
+  .sched .card{display:grid;grid-template-columns:86px 1fr;gap:12px;align-items:start}
+  .sched .when{font-weight:700;font-size:15px;line-height:1.35}
+  .sched .when small{display:block;font-weight:500;color:var(--t3);font-size:13px}
+  .sched .what b{display:block;font-size:16px}
+  .sched .what span{color:var(--t2);font-size:14px}
+  .sched .tbd .when{color:var(--t3)}
+
+  /* 자료 */
+  .doc{display:flex;gap:14px;align-items:center}
+  .num{flex:none;width:42px;height:42px;border-radius:8px;background:var(--k);color:var(--y);font-weight:900;font-size:16px;display:flex;align-items:center;justify-content:center}
+  .doc .info{flex:1;min-width:0}
+  .doc .info b{display:block;font-size:16px;line-height:1.4}
+  .doc .info span{display:block;color:var(--t2);font-size:13px}
+  .dl{flex:none;min-height:42px;padding:0 14px;border-radius:8px;background:var(--y);color:var(--k);font-weight:700;font-size:14px;text-decoration:none;display:flex;align-items:center}
+  .dl.off{background:#ececea;color:#a0a0a0;pointer-events:none}
+
+  /* 강조 카드 */
+  .feature{display:grid;gap:14px}
+  .feature .card{border-left:5px solid var(--y)}
+  .feature h3{font-size:18px;margin-bottom:4px}
+  .feature p{color:var(--t2);font-size:15px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .chips span{font-size:13px;background:#f1f1ef;border-radius:999px;padding:3px 10px;color:var(--t2)}
+  .sponsor{font-size:13px;color:var(--t3);margin-top:10px}
+
+  footer{margin-top:44px;background:var(--k);color:#9a9a9a;font-size:13px;border-left:8px solid var(--y)}
+  footer .wrap{padding:28px 20px}
+  footer b{color:#fff;letter-spacing:2px}
+
+  @media (min-width:640px){
+    .feature{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+
+<!--
+  ===== 수정은 아래 CONFIG만 =====
+  · url이 빈칸("")이면 버튼이 '준비 중'으로 잠깁니다. 링크를 넣으면 자동으로 열립니다.
+  · PDF는 files/ 폴더에 넣고 "files/파일명.pdf"로 적습니다 (파일명은 영문·숫자).
+-->
+<script>
+const CONFIG = {
+  updated: "2026-11-10",
+
+  band: {
+    joinUrl: "",                          // 밴드 초대 링크
+    chatName: "2026 아카데미 수강생 전용"
+  },
+
+  schedule: [
+    { when: "11월 ○일", day: "○요일", title: "이론 강의 (3시간)", desc: "강사 5명 · 각 30분 — 장소 미정" },
+    { when: "실기 1일차", day: "날짜 미정", title: "실기 강습", desc: "뵐클 강사팀 — 집합 시간·장소는 소통방 공지" },
+    { when: "실기 2일차", day: "날짜 미정", title: "실기 강습", desc: "뵐클 강사팀 — 집합 시간·장소는 소통방 공지" }
+  ],
+
+  lectures: [
+    { no: "01", title: "강의 1 제목", who: "강사 이름", url: "" },
+    { no: "02", title: "강의 2 제목", who: "강사 이름", url: "" },
+    { no: "03", title: "강의 3 제목", who: "강사 이름", url: "" },
+    { no: "04", title: "몸을 아는 스키어 — 잘 타는 몸은 따로 있다", who: "최준 · HCORE 대표 트레이너", url: "files/04_lecture_choi.pdf" },
+    { no: "05", title: "스키를 휘게 하라", who: "홍선의 · 뵐클 스키 아카데미 원장", url: "files/05_lecture_hong.pdf" }
+  ],
+
+  tnj: {
+    title: "티앤제이컴퍼니 2026 겨울 행사",
+    desc: "뵐클 수입사 티앤제이컴퍼니의 올겨울 시승·프로모션 행사 안내입니다.",
+    url: ""                               // 행사자료 PDF 또는 링크
+  },
+
+  crew: {
+    pdf: "files/video_crew.pdf",
+    form: "https://zurl.kr/RJDrfa"
+  },
+
+  survey: {
+    title: "아카데미 수강 설문",
+    desc: "강의와 실기에 대한 의견을 들려주세요. 다음 아카데미와 무료강습 주제에 반영합니다.",
+    url: ""                               // 설문 링크
+  },
+
+  book: {
+    pdf: "files/book_promo.pdf",
+    url: ""                               // 크몽 상품 링크
+  }
+};
+</script>
+
+<header>
+  <div class="wrap">
+    <span class="kicker">2026 VÖLKL SKI ACADEMY</span>
+    <h1>뵐클 스키 아카데미<br>수강생 안내</h1>
+    <p class="lead">강의자료 · 실기 일정 · 행사 소식을 이 페이지 한 곳에 모았습니다</p>
+    <p class="updated" id="updated"></p>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#band">소통방</a>
+    <a href="#schedule">일정</a>
+    <a href="#lectures">강의자료</a>
+    <a href="#tnj">티앤제이 행사</a>
+    <a href="#crew">영상 크루</a>
+    <a href="#survey">설문</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- 소통방 -->
+  <section id="band">
+    <span class="sec-tag">꼭 먼저</span>
+    <h2>수강생 소통방에 들어와 주세요</h2>
+    <p class="sub">실기 일정, 집합 장소, 날씨에 따른 변경은 모두 소통방에서 알려드립니다.</p>
+    <div class="band">
+      <h3>밴드 채팅방 참여 (1분)</h3>
+      <p>작년에 단체문자를 못 받으신 분들이 있어, 올해는 밴드로 안내합니다.</p>
+      <ol class="steps">
+        <li><b>밴드 가입</b> — 아래 버튼으로 「뵐클 스키 아카데미」 밴드에 가입하세요. 이미 가입하셨으면 다음으로.</li>
+        <li><b>채팅 메뉴</b> — 밴드 화면에서 <b>채팅</b>을 누르세요.</li>
+        <li><b id="chatName"></b> 방을 찾아 <b>참여</b>를 누르세요.</li>
+      </ol>
+      <a class="btn full" id="bandBtn">밴드 가입하기</a>
+      <p class="note" style="margin-top:14px">참여 후 밴드 프로필 이름을 <b style="color:#fff">실명</b>(예: 홍길동 / 스키왕)으로 바꿔 주세요. 명단과 맞춰 빠짐없이 안내해 드리기 위해서입니다.</p>
+    </div>
+  </section>
+
+  <!-- 일정 -->
+  <section id="schedule">
+    <span class="sec-tag">일정</span>
+    <h2>아카데미 일정</h2>
+    <p class="sub">이론 3시간 + 실기 2일. 변경 사항은 소통방에 먼저 올립니다.</p>
+    <div class="sched" id="schedList"></div>
+  </section>
+
+  <!-- 강의자료 -->
+  <section id="lectures">
+    <span class="sec-tag">다운로드</span>
+    <h2>강의자료 5종</h2>
+    <p class="sub">이론 강의 슬라이드입니다. 휴대폰에서 누르면 바로 열리고, 저장해 두고 다시 보실 수 있습니다.</p>
+    <div id="lecList"></div>
+  </section>
+
+  <!-- 티앤제이 -->
+  <section id="tnj">
+    <span class="sec-tag">스폰서 행사</span>
+    <h2 id="tnjTitle"></h2>
+    <div class="card">
+      <p class="sub" id="tnjDesc" style="margin:0"></p>
+      <a class="btn dark" id="tnjBtn">행사 자료 보기</a>
+    </div>
+  </section>
+
+  <!-- 영상 크루 -->
+  <section id="crew">
+    <span class="sec-tag">모집</span>
+    <h2>뵐클 영상 크루 1기</h2>
+    <p class="sub">보는 눈, 읽는 눈, 찍는 눈으로 스키를 공부하는 모임입니다.</p>
+    <div class="card">
+      <div class="chips"><span>4회</span><span>주말 또는 평일</span><span>3~4명</span><span>강습비 없음</span><span>본인 영상 원본 제공</span></div>
+      <p class="sub" style="margin:12px 0 0">출연·촬영·관찰 역할을 슬로프마다 바꾸며 서로의 영상을 보고 증상을 이야기합니다. 신청 → 사전 미팅 → 확정 순서로 진행합니다.</p>
+      <a class="btn full" id="crewForm">신청 폼 열기</a>
+      <a class="btn ghost full" id="crewPdf" style="margin-top:8px">모집 안내 PDF</a>
+    </div>
+  </section>
+
+  <!-- 설문 -->
+  <section id="survey">
+    <span class="sec-tag">설문</span>
+    <h2 id="surveyTitle"></h2>
+    <div class="card">
+      <p class="sub" id="surveyDesc" style="margin:0"></p>
+      <a class="btn full" id="surveyBtn">설문 참여하기</a>
+    </div>
+  </section>
+
+  <!-- 책 -->
+  <section id="book">
+    <span class="sec-tag">NEW 전자책</span>
+    <h2>스키를 휘게 하라</h2>
+    <p class="sub">중상급 스키어를 위한 마스터 가이드 — 아카데미 강의를 한 권에 담았습니다.</p>
+    <div class="card">
+      <div class="chips"><span>PDF 전자책</span><span>A5 · 87쪽</span><span>설명 영상 QR 27개</span></div>
+      <a class="btn dark full" id="bookBtn">크몽에서 보기</a>
+      <a class="btn ghost full" id="bookPdf" style="margin-top:8px">책 소개 PDF</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>VÖLKL SKI ACADEMY</b>
+    <p style="margin-top:8px">문의는 밴드 게시판 댓글로 남겨 주세요.</p>
+    <p class="sponsor">뵐클 스키 아카데미는 티앤제이컴퍼니의 지원으로 운영됩니다.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const C = CONFIG;
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  // 링크가 없으면 '준비 중'으로 잠금
+  function setLink(el, url, label){
+    if (url) {
+      el.href = url;
+      if (/^https?:/.test(url)) { el.target = "_blank"; el.rel = "noopener"; }
+      if (/\.pdf$/i.test(url)) el.setAttribute("download", "");
+    } else {
+      el.removeAttribute("href");
+      el.classList.add("off");
+      el.textContent = (label || el.textContent) + " · 준비 중";
+    }
+  }
+
+  $("updated").textContent = "최종 업데이트 " + C.updated;
+
+  $("chatName").textContent = "「" + C.band.chatName + "」";
+  setLink($("bandBtn"), C.band.joinUrl);
+
+  $("schedList").innerHTML = C.schedule.map(s => {
+    const tbd = /○|미정/.test(s.when + s.day);
+    return `<div class="card${tbd ? ' tbd' : ''}">
+      <div class="when">${esc(s.when)}<small>${esc(s.day)}</small></div>
+      <div class="what"><b>${esc(s.title)}</b><span>${esc(s.desc)}</span></div>
+    </div>`;
+  }).join("");
+
+  $("lecList").innerHTML = C.lectures.map(l => `
+    <div class="card doc">
+      <div class="num">${esc(l.no)}</div>
+      <div class="info"><b>${esc(l.title)}</b><span>${esc(l.who)}</span></div>
+      ${l.url
+        ? `<a class="dl" href="${esc(l.url)}" download>PDF</a>`
+        : `<span class="dl off">준비 중</span>`}
+    </div>`).join("");
+
+  $("tnjTitle").textContent = C.tnj.title;
+  $("tnjDesc").textContent = C.tnj.desc;
+  setLink($("tnjBtn"), C.tnj.url);
+
+  setLink($("crewForm"), C.crew.form);
+  setLink($("crewPdf"), C.crew.pdf);
+
+  $("surveyTitle").textContent = C.survey.title;
+  $("surveyDesc").textContent = C.survey.desc;
+  setLink($("surveyBtn"), C.survey.url);
+
+  setLink($("bookBtn"), C.book.url);
+  setLink($("bookPdf"), C.book.pdf);
+})();
+</script>
+</body>
+</html>
