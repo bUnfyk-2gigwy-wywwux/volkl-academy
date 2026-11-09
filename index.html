@@ -90,6 +90,14 @@
   footer{margin-top:44px;background:var(--k);color:#9a9a9a;font-size:13px;border-left:8px solid var(--y)}
   footer .wrap{padding:28px 20px}
   footer b{color:#fff;letter-spacing:2px}
+  footer .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  footer .links a{color:var(--y);text-decoration:none;border:1px solid #3a3a3a;border-radius:999px;padding:6px 14px;font-size:14px;font-weight:500}
+
+  /* 카페 카드 */
+  .cafe{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px}
+  .cafe b{display:block;font-size:16px}
+  .cafe span{color:var(--t2);font-size:14px}
+  .cafe .dl{background:#03c75a;color:#fff}
 
   @media (min-width:640px){
     .feature{grid-template-columns:1fr 1fr}
@@ -109,19 +117,24 @@ const CONFIG = {
   // 2026-11-10: 최준 강의 04 → 03으로 순서 변경
 
   band: {
-    joinUrl: "",                          // 밴드 초대 링크
+    joinUrl: "https://band.us/@skiacademy",   // 밴드 주소
     chatName: "2026 아카데미 수강생 전용"
+  },
+
+  cafe: {
+    name: "필수 스키 기술",
+    url: "https://cafe.naver.com/skiacademy"  // 네이버 카페
   },
 
   schedule: [
     { when: "11월 7일", day: "토요일 · 완료", title: "이론 세미나 (3시간)", desc: "상암동 KGIT 빌딩 시네마관 · 강사 5명 — 강의자료는 아래에서 받으세요" },
-    { when: "실기 1일차", day: "날짜 미정", title: "실기 강습", desc: "뵐클 강사팀 — 집합 시간·장소는 소통방 공지" },
-    { when: "실기 2일차", day: "날짜 미정", title: "실기 강습", desc: "뵐클 강사팀 — 집합 시간·장소는 소통방 공지" }
+    { when: "12월 5일", day: "토요일", title: "실기 강습 1일차", desc: "뵐클 강사팀 — 집합 시간·장소는 소통방 공지" },
+    { when: "12월 6일", day: "일요일", title: "실기 강습 2일차", desc: "뵐클 강사팀 — 집합 시간·장소는 소통방 공지" }
   ],
 
   lectures: [
     { no: "01", title: "최근의 일본 스키연맹 지도자 연수 과제", who: "안재한 · 일본스키연맹 공인 스키 지도원 · C급 검정원", url: "files/01_lecture_Ahn.pdf" },
-    { no: "02", title: "스키어의 90%가 오해하는 스키 용어와 진실", who: "양성철 교수 · 서경대 · KSIA 학술위원회 위원장", url: "files/02_lecture_Yang.pdf" },
+    { no: "02", title: "스키어가 오해하는 스키 용어와 진실", who: "양성철 교수 · 서경대 · KSIA 학술위원회 위원장", url: "files/02_lecture_Yang.pdf" },
     { no: "03", title: "몸을 아는 스키어 — 잘 타는 몸은 따로 있다", who: "최준 · HCORE 대표 트레이너", url: "files/03_lecture_Choi.pdf" },
     { no: "04", title: "선수들이 생각하는 스키", who: "김현태 · 前 알파인스키 국가대표", url: "files/04_lecture_Kim.pdf" },
     { no: "05", title: "일관성 있는 동작에서 컨트롤로", who: "홍선의 · 뵐클 스키 아카데미 원장", url: "files/05_lecture_hong.pdf" }
@@ -188,6 +201,10 @@ const CONFIG = {
       </ol>
       <a class="btn full" id="bandBtn">밴드 가입하기</a>
       <p class="note" style="margin-top:14px">참여 후 밴드 프로필 이름을 <b style="color:#fff">실명</b>(예: 홍길동 / 스키왕)으로 바꿔 주세요. 명단과 맞춰 빠짐없이 안내해 드리기 위해서입니다.</p>
+    </div>
+    <div class="card cafe">
+      <div><b id="cafeName"></b><span>원장 기술 칼럼과 무료강습 공지가 올라오는 네이버 카페</span></div>
+      <a class="dl" id="cafeBtn">카페 가기</a>
     </div>
   </section>
 
@@ -258,6 +275,10 @@ const CONFIG = {
   <div class="wrap">
     <b>VÖLKL SKI ACADEMY</b>
     <p style="margin-top:8px">문의는 밴드 게시판 댓글로 남겨 주세요.</p>
+    <div class="links">
+      <a id="footBand">밴드 · 뵐클 스키 아카데미</a>
+      <a id="footCafe"></a>
+    </div>
     <p class="sponsor">뵐클 스키 아카데미는 티앤제이컴퍼니의 지원으로 운영됩니다.</p>
   </div>
 </footer>
@@ -285,6 +306,11 @@ const CONFIG = {
 
   $("chatName").textContent = "「" + C.band.chatName + "」";
   setLink($("bandBtn"), C.band.joinUrl);
+  setLink($("footBand"), C.band.joinUrl);
+  $("cafeName").textContent = "네이버 카페 「" + C.cafe.name + "」";
+  setLink($("cafeBtn"), C.cafe.url);
+  $("footCafe").textContent = "카페 · " + C.cafe.name;
+  setLink($("footCafe"), C.cafe.url);
 
   $("schedList").innerHTML = C.schedule.map(s => {
     const tbd = /○|미정/.test(s.when + s.day);
