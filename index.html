@@ -78,6 +78,13 @@
   .dl{flex:none;min-height:42px;padding:0 14px;border-radius:8px;background:var(--y);color:var(--k);font-weight:700;font-size:14px;text-decoration:none;display:flex;align-items:center}
   .dl.off{background:#ececea;color:#a0a0a0;pointer-events:none}
 
+  /* 크루 지향점 */
+  .aims{list-style:none;margin:-6px 0 16px;padding:14px 16px;background:var(--k);border-radius:10px}
+  .aims li{position:relative;padding-left:16px;color:#e8e8e8;font-size:15px;line-height:1.55}
+  .aims li + li{margin-top:6px}
+  .aims li::before{content:"";position:absolute;left:0;top:5px;width:4px;height:14px;background:var(--y)}
+  .aims b{color:var(--y)}
+
   /* 강조 카드 */
   .feature{display:grid;gap:14px}
   .feature .card{border-left:5px solid var(--y)}
@@ -159,7 +166,7 @@ const CONFIG = {
 
   book: {
     pdf: "files/book_promo.pdf",
-    url: ""                               // 크몽 상품 링크
+    url: "https://litt.ly/hongikski/sale/qgbCgER"   // 리틀리 판매 링크
   }
 };
 </script>
@@ -239,6 +246,10 @@ const CONFIG = {
     <span class="sec-tag">모집</span>
     <h2>뵐클 영상 크루 1기</h2>
     <p class="sub">보는 눈, 읽는 눈, 찍는 눈으로 스키를 공부하는 모임입니다.</p>
+    <ul class="aims">
+      <li>인간이 가진 <b>원초적인 밸런스 기능</b>을 흐트리지 않고, 스키에 그대로 쓸 수 있도록</li>
+      <li>스키를 좋아하는 만큼 <b>지식 · 보는 눈 · 동작</b>이 함께 발전하도록</li>
+    </ul>
     <div class="card">
       <div class="chips"><span>4회</span><span>주말 또는 평일</span><span>3~4명</span><span>강습비 없음</span><span>본인 영상 원본 제공</span></div>
       <p class="sub" style="margin:12px 0 0">출연·촬영·관찰 역할을 슬로프마다 바꾸며 서로의 영상을 보고 증상을 이야기합니다. 신청 → 선발 → 사전 미팅 → 확정 순서로 진행합니다.</p>
@@ -264,7 +275,7 @@ const CONFIG = {
     <p class="sub">중상급 스키어를 위한 마스터 가이드 — 아카데미 강의를 한 권에 담았습니다.</p>
     <div class="card">
       <div class="chips"><span>PDF 전자책</span><span>A5 · 87쪽</span><span>설명 영상 QR 27개</span></div>
-      <a class="btn dark full" id="bookBtn">크몽에서 보기</a>
+      <a class="btn dark full" id="bookBtn">리틀리에서 보기</a>
       <a class="btn ghost full" id="bookPdf" style="margin-top:8px">책 소개 PDF</a>
     </div>
   </section>
